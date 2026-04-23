@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Web Dasar Lengkap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Belajar HTML & CSS</h1>
+        <p>Halaman ini mendemonstrasikan berbagai tag HTML dalam satu struktur rapi.</p>
+    </header>
+
+    <main class="container">
+        
+        <section class="card">
+            <h2>1. Heading & Format Teks</h2>
+            <p>Ini adalah paragraf standar. Di dalamnya kita bisa membuat teks menjadi <b>tebal</b>, <i>miring</i>, <u>bergaris bawah</u>, atau bahkan <mark>ditandai dengan warna</mark>.</p>
+            <p class="custom-color">Teks ini memiliki warna khusus yang diatur melalui CSS.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. Media & Tautan</h2>
+            <p>Klik link ini untuk pergi ke <a href="https://google.com" target="_blank">Google</a>.</p>
+            <div class="image-box">
+                <img src="pohon kelapa.jpg" alt="Contoh Gambar Web">
+                <p><small>Keterangan: Gambar di atas adalah elemen &lt;img&gt;</small></p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>3. Daftar (Lists)</h2>
+            <div class="lists-flex">
+                <div>
+                    <h3>Bullet Points (&lt;ul&gt;)</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Nomor Berurutan (&lt;ol&gt;)</h3>
+                    <ol>
+                        <li>Tahap Analisis</li>
+                        <li>Tahap Desain</li>
+                        <li>Tahap Coding</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>4. Tabel Data</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Mata Kuliah</th>
+                        <th>SKS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Pemrograman Web</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Desain Grafis</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>5. Formulir & Validasi Input</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Contoh: Budi Santoso">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="alamat@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="warna">Pilih Warna Favorit:</label>
+                    <input type="color" id="warna" name="warna" value="#4A90E2">
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Data</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Dibuat untuk Belajar Web Dasar</p>
+    </footer>
+    
+<script src="script.js"></script>
+</body>
+</html>
